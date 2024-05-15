@@ -31,6 +31,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "25c1e15e-b5f4-440a-90fa-b6a5e86ea616"
+      }
+    },
+    "owner": "gustavolutkenhaus"
   }
 }
