@@ -1,9 +1,10 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import Metrics from './pages/Metrics/index.js';
 import MeasuresHistory from './pages/Measures-history/index.js';
 import Favorites from './pages/Favorites/index';
 import Profile from './pages/Profile/index';
-import Search from './pages/Search/index';
+import UserForm from './pages/UserForm/index';
 import { Ionicons } from '@expo/vector-icons';
 import Measures from './pages/Measures/index.js';
 
@@ -19,6 +20,18 @@ function Routes() {
           bacgroundcolor: '#fefbd8',
         },
       }}>
+      <Tab.Screen
+        name="Metrics"
+        component={Metrics}
+        options={{
+          tabBarIcon: ({ color, size, focused }) => {
+            if (focused) {
+              return <Ionicons name="barbell" size={size} color={color} />;
+            }
+            return <Ionicons name="barbell-outline" size={size} color={color} />;
+          },
+        }}
+      />
       <Tab.Screen
         name="Measuares History"
         component={MeasuresHistory}
@@ -58,14 +71,14 @@ function Routes() {
         }}
       />
       <Tab.Screen
-        name="Search"
-        component={Search}
+        name="UserForm"
+        component={UserForm}
         options={{
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
-              return <Ionicons name="search" size={size} color={color} />;
+              return <Ionicons name="person" size={size} color={color} />;
             }
-            return <Ionicons name="search-outline" size={size} color={color} />;
+            return <Ionicons name="person-add-outline" size={size} color={color} />;
           },
         }}
       />

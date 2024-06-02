@@ -72,15 +72,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#f5fcff',
+    backgroundColor: '#1A383F',
   },
   title: {
+    color: "#FFF",
     fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 20,
   },
   input: {
+    color: "#FFF",
     height: 40,
     borderColor: 'gray',
     borderWidth: 1,
@@ -88,12 +90,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   item: {
-    backgroundColor: '#f9c2ff',
+    color: "#FFF",
+    backgroundColor: '#1A383F',
     padding: 10,
     marginVertical: 5,
     borderRadius: 5,
   },
   itemText: {
+    color: "#FFF",
     fontSize: 18,
   },
 });
